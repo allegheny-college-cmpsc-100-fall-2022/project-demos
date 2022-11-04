@@ -51,7 +51,6 @@ class Book(ItemSpec):
 
 def main():
     book = Book()
-    print(book)
     book.use()
 
 if __name__ == "__main__":
