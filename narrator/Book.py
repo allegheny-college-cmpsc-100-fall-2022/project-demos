@@ -1,17 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import narrator
 from inventory.Item import ItemSpec
 
