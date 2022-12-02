@@ -1,15 +1,5 @@
 from Stack import Stack
 
-def add(stack: Stack = Stack()):
-    while True:
-        value = input("Enter a value to add: ")
-        if not value:
-            break
-        stack.push(value)
-
-def unpack(stack: Stack = Stack()):
-    return stack.pop()
-
 def main():
     stack = Stack()
     while True:
@@ -17,12 +7,17 @@ def main():
         if choice in ["a","u"]:
             break
         print("Enter a valid choice.")
+    
     if choice == "a":
-        add(stack)
+        while True:
+            value = input("Enter a value to add: ")
+            if not value:
+                break
+            stack.push(value)
     else:
         while stack.length > 0:
-            print(unpack(stack).strip())
-        print(unpack(stack).strip())
+            print(stack.pop())
+        print(stack.pop())
 
 if __name__ == "__main__":
     main()

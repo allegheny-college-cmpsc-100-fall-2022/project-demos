@@ -41,7 +41,7 @@ class Stack:
             value = "STACK EMPTY"
         self.write()
         self.length = len(self.values)
-        return value
+        return value.strip()
 
     def write(self) -> None:
         # Write the list to the stack
