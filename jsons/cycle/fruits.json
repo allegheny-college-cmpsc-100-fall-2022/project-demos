@@ -1,5 +1,14 @@
 {
-    "apple": "0.50",
-    "banana": "0.75",
-    "durian": "15.99"
+    "apple": {
+        "price": ".50",
+        "quantity": "3"
+    },
+    "pear": {
+        "price": ".75",
+        "quantity": "5"
+    },
+    "banana ": {
+        "price": "1.00",
+        "quantity": "10"
+    }
 }
