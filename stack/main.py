@@ -20,7 +20,9 @@ def main():
     if choice == "a":
         add(stack)
     else:
-        print(unpack().strip())
+        while stack.length > 0:
+            print(unpack(stack).strip())
+        print(unpack(stack).strip())
 
 if __name__ == "__main__":
     main()

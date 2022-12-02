@@ -7,6 +7,7 @@ class Stack:
         # When initializing the object,
         # read the values from the file
         self.values = self.read()
+        self.length = len(self.values)
 
     def exists(self) -> bool:
         # Check if file exists
@@ -39,10 +40,11 @@ class Stack:
         except IndexError:
             value = "STACK EMPTY"
         self.write()
+        self.length = len(self.values)
         return value
 
     def write(self) -> None:
         # Write the list to the stack
-        with open("stack", "w+") as fh:
+        with open("stack", "w") as fh:
             for val in self.values:
                 fh.write(f"{val}")
